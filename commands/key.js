@@ -24,9 +24,25 @@ const key = {
     //console.log("Hello from set");
   },
   show() {
+    try {
+      const keyManager = new KeyManager();
+      const key = keyManager.getKey();
+      console.log("Current API Key: ", key.yellow);
+      return key;
+    } catch (err) {
+      console.error(err.message.red);
+    }
     //console.log("Hello from show");
   },
   remove() {
+    try {
+      const keyManager = new KeyManager();
+      const key = keyManager.deleteKey();
+      console.log("Key has been removed".red);
+      return key;
+    } catch (err) {
+      console.error(err.message.red);
+    }
     //console.log("Hello from remove");
   },
 };
