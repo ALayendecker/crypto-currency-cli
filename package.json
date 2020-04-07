@@ -1,5 +1,5 @@
 {
-  "name": "crypto-app",
+  "name": "crypto",
   "version": "1.0.0",
   "description": "crypto-cli",
   "main": "index.js",
